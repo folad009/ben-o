@@ -51,13 +51,10 @@ export function Footer() {
         <div className="absolute inset-0 bg-charcoal/85" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-[1440px] px-6 py-8 md:px-12 md:py-8">
-        <p
-          className="pointer-events-none select-none font-hero text-center text-[clamp(3.5rem,15vw,11rem)] uppercase leading-[0.9] tracking-tight text-white/15"
-          aria-hidden="true"
-        >
-          {SITE.name}
-        </p>
+      <div className="relative z-10 mx-auto max-w-360 px-6 py-8 md:px-12 md:py-8">
+       <h1 className="hero-name pointer-events-none w-full select-none whitespace-nowrap font-display text-[clamp(2.55rem,11vw,12rem)] font-bold leading-none tracking-tighter text-ivory/10 [text-shadow:0_2px_24px_rgba(0,0,0,0.6),0_4px_48px_rgba(0,0,0,0.4)]">
+            {SITE.name}
+          </h1>
 
         <div className="mt-14 flex flex-col gap-14 lg:mt-20 lg:flex-row lg:items-start lg:justify-between lg:gap-20">
           <FooterNewsletter />

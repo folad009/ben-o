@@ -17,7 +17,7 @@ export const NAV_ITEMS = [
   { label: "Journey", href: "#journey" },
   { label: "Speaking", href: "#speaking" },
   { label: "Achievements", href: "#achievements" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work with me", href: "#contact" },
 ] as const;
 
 export const ACHIEVEMENT_METRICS = [

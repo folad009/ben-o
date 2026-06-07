@@ -33,16 +33,16 @@ export function Header() {
           : "bg-ivory/0 py-6 md:py-8 text-white border-white",
       )}
     >
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 md:px-12">
+      <div className="mx-auto flex max-w-360 items-center justify-between px-6 md:px-12">
         <Link
           href="#"
           className="flex items-center gap-3"
           aria-label={`${SITE.name} home`}
         >
-          <span
+          {/*<span
             className="h-7 w-4 rounded-full border"
             aria-hidden="true"
-          />
+          />*/}
           <span className="text-xs font-medium uppercase tracking-[0.2em] md:text-sm">
             {SITE.name}
           </span>
@@ -56,7 +56,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-[14px] font-medium uppercase tracking-[0.18em]  transition-opacity hover:opacity-60"
+              className="text-[13px] font-medium uppercase tracking-[0.18em]  transition-opacity hover:opacity-60"
             >
               {item.label}
             </Link>
@@ -76,7 +76,7 @@ export function Header() {
 
       {menuOpen && (
         <nav
-          className="fixed inset-0 top-[72px] z-40 flex flex-col gap-8 bg-ivory px-6 py-12 lg:hidden"
+          className="fixed inset-0 top-18 z-40 flex flex-col gap-8 bg-ivory px-6 py-12 lg:hidden"
           aria-label="Mobile navigation"
         >
           {NAV_ITEMS.map((item) => (

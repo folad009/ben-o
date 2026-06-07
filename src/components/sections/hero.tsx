@@ -67,10 +67,10 @@ export function Hero() {
         </div>
 
         <div className="hero-bg-text relative z-10 flex min-h-[90vh] flex-col items-center justify-end px-5 pb-2 pt-24 text-center md:min-h-screen md:px-8 md:pb-4 md:pt-28">
-          <Eyebrow className="hero-eyebrow mb-3 text-ivory/90 drop-shadow-md md:mb-5">
+          <Eyebrow className="hero-eyebrow mb-0 text-ivory/90 drop-shadow-md md:mb-2">
             {SITE.tagline.replace(/ • /g, " · ")}
           </Eyebrow>
-          <h1 className="hero-name pointer-events-none w-full max-w-360 select-none whitespace-nowrap font-display text-[clamp(2.55rem,11vw,12rem)] font-normal leading-none tracking-tight text-ivory [text-shadow:0_2px_24px_rgba(0,0,0,0.6),0_4px_48px_rgba(0,0,0,0.4)]">
+          <h1 className="hero-name pointer-events-none w-full max-w-360 select-none whitespace-nowrap font-display text-[clamp(2.55rem,11vw,12rem)] font-bold leading-none tracking-tighter text-ivory [text-shadow:0_2px_24px_rgba(0,0,0,0.6),0_4px_48px_rgba(0,0,0,0.4)]">
             {SITE.name}
           </h1>
         </div>
@@ -83,10 +83,10 @@ export function Hero() {
           and a Harambean Fellow.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button href="#journey" variant="sand">
+          <Button href="#journey" variant="sand" className="font-display font-bold">
             Explore Journey
           </Button>
-          <Button href="#contact" variant="secondary">
+          <Button href="#contact" variant="secondary" className="font-display font-bold">
            Let&apos;s Connect
           </Button>
         </div>
