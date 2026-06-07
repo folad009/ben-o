@@ -83,11 +83,11 @@ export function Hero() {
           and a Harambean Fellow.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button href="#contact" variant="sand">
-            Contact Me
+          <Button href="#journey" variant="sand">
+            Explore Journey
           </Button>
-          <Button href="#" variant="secondary">
-            Download CV
+          <Button href="#contact" variant="secondary">
+           Let&apos;s Connect
           </Button>
         </div>
       </div>
