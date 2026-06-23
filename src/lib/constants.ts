@@ -122,7 +122,7 @@ export const SPEAKING = [
   },
   {
     topic: "AfroTech",
-    location: "Austin, USA",
+    location: "Houston, USA",
     description: "Building Fintech Solutions in Africa",
   },
   {
@@ -151,8 +151,8 @@ export const SPEAKING = [
     description: "Build the Change You Want to See",
   },
   {
-    topic: "Harvard Centre for African Studies",
-    location: "Cambridge, USA",
+    topic: "Africa Tech Summit",
+    location: "London, UK",
     description: "Featured Speaker",
   },
 ] as const;
