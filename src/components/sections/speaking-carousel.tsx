@@ -1,6 +1,6 @@
 "use client";
 
-import { IMAGE, SPEAKING } from "@/lib/constants";
+import { SPEAKING } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -152,29 +152,46 @@ export function SpeakingCarousel() {
           <article
             key={event.topic}
             aria-roledescription="slide"
-            aria-label={`${index + 1} of ${SPEAKING.length}`}
+            aria-label={`${index + 1} of ${SPEAKING.length}: ${event.topic}`}
             aria-hidden={index !== activeIndex}
-            className="group w-[min(88vw,520px)] shrink-0 snap-center border border-charcoal/10 bg-white p-6 transition-shadow duration-300 hover:shadow-lg sm:w-[min(72vw,520px)] md:p-8"
+            data-active={index === activeIndex ? "true" : "false"}
+            className="group relative aspect-[4/5] w-[min(72vw,340px)] shrink-0 snap-center overflow-hidden sm:w-[min(56vw,360px)] md:w-[min(42vw,380px)]"
           >
-            <div className="flex gap-6">
-              <div className="relative hidden h-32 w-28 shrink-0 overflow-hidden sm:block">
-                <Image
-                  src={IMAGE}
-                  alt={event.topic}
-                  fill
-                  className="object-cover object-top"
-                  sizes="112px"
-                />
-              </div>
-              <div>
-                <h3 className="font-display text-xl text-charcoal md:text-2xl">
-                  {event.topic}
-                </h3>
-                <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-charcoal/60">
-                  <span>{event.location}</span>
-                  <span className="text-sand">{event.description}</span>
-                </div>
-              </div>
+            <Image
+              src={event.image}
+              alt={event.topic}
+              fill
+              className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+              sizes="(max-width: 640px) 72vw, (max-width: 1024px) 56vw, 380px"
+            />
+
+            <div
+              className={cn(
+                "absolute inset-0 bg-linear-to-t from-charcoal/90 via-charcoal/35 to-charcoal/10",
+                "opacity-0 transition-opacity duration-500",
+                "group-hover:opacity-100",
+                "max-md:group-data-[active=true]:opacity-100",
+                "motion-reduce:opacity-100",
+              )}
+              aria-hidden="true"
+            />
+
+            <div
+              className={cn(
+                "absolute inset-x-0 bottom-0 flex flex-col gap-3 p-6 text-ivory",
+                "translate-y-3 opacity-0 transition-all duration-500 ease-out",
+                "group-hover:translate-y-0 group-hover:opacity-100",
+                "max-md:group-data-[active=true]:translate-y-0 max-md:group-data-[active=true]:opacity-100",
+                "motion-reduce:translate-y-0 motion-reduce:opacity-100",
+              )}
+            >
+              <h3 className="font-display text-xl leading-tight md:text-2xl">
+                {event.topic}
+              </h3>
+              <p className="text-sm text-ivory/80">{event.location}</p>
+              <p className="text-sm leading-relaxed text-sand">
+                {event.description}
+              </p>
             </div>
           </article>
         ))}

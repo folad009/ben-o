@@ -119,41 +119,49 @@ export const SPEAKING = [
     topic: "GITEX Global",
     location: "Dubai, UAE",
     description: "Africa's Role in Shaping the Future of Innovation",
+    image: "/images/gitex-image.jpg",
   },
   {
     topic: "AfroTech",
     location: "Houston, USA",
     description: "Building Fintech Solutions in Africa",
+    image: "/images/afrotech-image.jpg",
   },
   {
     topic: "Digital Technology Showcase",
     location: "Lagos, Nigeria",
     description: "AI & Innovation in the Nigerian Mobility Sector",
+    image: "/images/digital-tech-showcase-image.jpg",
   },
   {
     topic: "Art of Technology Lagos 7.0",
     location: "Lagos, Nigeria",
     description: "Future Technologies & a Sustainable Lagos",
+    image: "/images/AOT-7-image.jpg",
   },
   {
     topic: "Art of Technology Lagos 5.0",
     location: "Lagos, Nigeria",
     description: "The Creative Economy & a Digital Lagos",
+    image: "/images/AOT-5-image.jpg",
   },
   {
     topic: "Founders Huddle 3.0",
     location: "Lagos, Nigeria",
     description: "Vision, Focus & Saying No",
+    image: "/images/founder-huddle-3-image.jpg",
   },
   {
     topic: "GIBC Forward",
     location: "Lagos, Nigeria",
     description: "Build the Change You Want to See",
+    image: "/images/benjamen-oladokun.jpg",
   },
   {
     topic: "Africa Tech Summit",
     location: "London, UK",
     description: "Featured Speaker",
+    image: "/images/africa-tech-summit-image.jpg",
   },
 ] as const;
 
