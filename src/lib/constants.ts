@@ -26,16 +26,7 @@ export const ACHIEVEMENT_METRICS = [
   { value: 1000, prefix: "", suffix: "+", label: "Entrepreneurs Empowered" },
   { value: 4, prefix: "", suffix: "", label: "Continents of Impact" },
   { value: 36, prefix: "", suffix: "", label: "Nigerian States Served" },
-  { value: 8, prefix: "", suffix: "+", label: "Notable Speaking Engagements" },
-] as const;
-
-export const ACHIEVEMENT_VENTURES = [
-  "Shekel Mobility (Y Combinator-backed)",
-  "Eazypapars Technologies (2015)",
-  "CampusChow",
-  "Snack It Distro",
-  "Head of Innovation, Venture Garden Group",
-  "Led MMIA Tollgates automation",
+  { value: 10, prefix: "", suffix: "+", label: "Notable Speaking Engagements" },
 ] as const;
 
 export const ACHIEVEMENT_RECOGNITION = [
@@ -43,7 +34,6 @@ export const ACHIEVEMENT_RECOGNITION = [
   "Harambeans Fellow — H'24",
   "Global Entrepreneurship Award",
   "Y Combinator Alumni",
-  "Harvard Centre for African Studies Speaker",
 ] as const;
 
 export const ACHIEVEMENT_LEADERSHIP = [
@@ -62,7 +52,7 @@ export const JOURNEY = [
       "Benjamen's entrepreneurial journey began at Obafemi Awolowo University, where he ignited his passion for ventures in gaming, hospitality, and mobility while earning his degree in Civil Engineering. This passion led to the successful establishment of CampusChow and Snack It Distro — early proof that bold ideas could scale.",
   },
   {
-    year: "Infrastructure Chapter · 2015",
+    year: "Infrastructure Chapter",
     title: "Eazypapers Technologies",
     description:
       "Co-founded Eazypapers — a leading digital vehicle documentation and fleet management platform in Nigeria. Built a robust online system connecting processing centres and thousands of agents across all 36 states to consumers, bringing order and scale to Nigeria's fragmented car paperwork market.",

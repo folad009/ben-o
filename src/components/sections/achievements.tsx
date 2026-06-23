@@ -7,7 +7,6 @@ import {
   ACHIEVEMENT_LEADERSHIP,
   ACHIEVEMENT_METRICS,
   ACHIEVEMENT_RECOGNITION,
-  ACHIEVEMENT_VENTURES,
 } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
@@ -19,7 +18,6 @@ import { useRef, useState } from "react";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const ACHIEVEMENT_TABS = [
-  { id: "ventures", title: "Ventures", items: ACHIEVEMENT_VENTURES },
   { id: "recognition", title: "Recognition", items: ACHIEVEMENT_RECOGNITION },
   { id: "leadership", title: "Leadership", items: ACHIEVEMENT_LEADERSHIP },
 ] as const;
