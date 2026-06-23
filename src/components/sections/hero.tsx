@@ -49,8 +49,8 @@ export function Hero() {
 
   return (
     <section ref={containerRef} className="bg-ivory" aria-label="Hero">
-      <div className="relative min-h-[90vh] w-full overflow-hidden md:min-h-screen">
-        <div className="hero-image absolute inset-0">
+      <div className="relative min-h-[90vh] w-full md:min-h-screen">
+        <div className="hero-image absolute inset-0 overflow-hidden">
           <Image
             src={IMAGE}
             alt=""
@@ -66,11 +66,11 @@ export function Hero() {
           />
         </div>
 
-        <div className="hero-bg-text relative z-10 flex min-h-[90vh] flex-col items-center justify-end px-5 pb-2 pt-24 text-center md:min-h-screen md:px-8 md:pb-4 md:pt-28">
+        <div className="hero-bg-text relative z-10 mx-auto flex min-h-[90vh] w-full max-w-360 flex-col items-center justify-end px-5 pb-2 pt-24 text-center sm:px-6 md:min-h-screen md:px-8 md:pb-4 md:pt-28 lg:px-10 xl:px-12 2xl:px-14">
           <Eyebrow className="hero-eyebrow mb-0 text-ivory/90 drop-shadow-md md:mb-2">
             {SITE.tagline.replace(/ • /g, " · ")}
           </Eyebrow>
-          <h1 className="hero-name pointer-events-none w-full max-w-360 select-none whitespace-nowrap font-display text-[clamp(2.55rem,11vw,12rem)] font-bold leading-none tracking-tighter text-ivory [text-shadow:0_2px_24px_rgba(0,0,0,0.6),0_4px_48px_rgba(0,0,0,0.4)]">
+          <h1 className="hero-name pointer-events-none w-full select-none whitespace-nowrap font-display text-[clamp(2.55rem,8.5vw,8.75rem)] font-bold leading-none tracking-tighter text-ivory [text-shadow:0_2px_24px_rgba(0,0,0,0.6),0_4px_48px_rgba(0,0,0,0.4)] xl:text-[clamp(3rem,7vw,8.25rem)] 2xl:text-[clamp(3.25rem,6.25vw,7.75rem)]">
             {SITE.name}
           </h1>
         </div>
